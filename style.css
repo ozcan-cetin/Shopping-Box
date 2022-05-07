@@ -1,0 +1,147 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+</style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: lightgrey;
+}
+
+header{
+    position: relative;
+    background-color: rgb(93, 230, 93);
+    height: 100px;
+}
+
+header h1{
+    color: white;
+    display: block;
+    padding-left: 100px;
+    line-height:100px ;
+}
+
+header h2{
+    position: absolute;
+    width: 0px;
+    border-top:25px solid rgb(93, 230, 93);
+    border-right:50px solid lightgrey;
+    border-left:50px solid lightgrey;
+    bottom: -50px;
+    left: 100px;
+}
+
+
+table {
+  width: 700px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+table,
+th,
+td {
+  border: 0.1px solid white;
+  border-collapse: collapse;
+  height: 30px;
+}
+
+th {
+  color: white;
+  background-color: grey;
+}
+
+tr:nth-child(2n):not(tr:nth-child(8)) {
+  background-color: lightgray;
+}
+
+tr:nth-child(2n-1) {
+  background-color: rgb(248, 245, 245);
+}
+
+tr:nth-child(8) {
+  background-color: rgba(90, 104, 104, 0.836);
+  color: white;
+}
+
+table th:nth-child(1),
+td:nth-child(1) {
+  width: 130px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+table th:nth-child(2),
+td:nth-child(2) {
+  width: 300px;
+  text-align: left;
+  padding-left: 5px;
+}
+table th:nth-child(3),table td:nth-child(3) {
+  width: 80px;
+  text-align: center;
+}
+
+table th:nth-child(4),
+td:nth-child(4) {
+  width: 140px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+table th:nth-child(5),
+td:nth-child(5) {
+  width: 100px;
+  text-align: right;
+  padding-right: 5px;
+ }
+
+table th:nth-child(6),
+td:nth-child(6) {
+  width: 30px;
+  text-align: center;
+}
+
+tr:nth-child(8)>td:nth-child(1),
+tr:nth-child(8)>td:nth-child(2) {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.buttons {
+    width: 700px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box1,
+.box2 {
+  margin-left: 15px;
+  height: 50px;
+  background-color: rgb(231, 165, 176);
+  width: 220px;
+  cursor: pointer;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+}
+
+table td:nth-child(6) i{
+    cursor: pointer;
+}
